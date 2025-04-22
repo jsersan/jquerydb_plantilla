@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar Registro - Base datos SQL AJAX</title>
+
+    <!-- Importacion del FontAwesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Importacion del jQuery -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/TweenMax.min.js"></script>
+
+    <!-- Importacion del Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importacion de Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Insertar Nuevo Registro</h1>
+        <hr>
+
+        <form class="form-horizontal" id="frmData">
+            <div class="form-group">
+                <label for="txtnombre">Nombre</label>
+                <input type="text" name="txtnombre" id="txtnombre" class="form-control" required>
+                <div class="invalid-feedback">
+                    El nombre es obligatorio
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="cmbestado">Estado</label>
+                <select name="cmbestado" id="cmbestado" class="form-control" required>
+                    <option value="activo">Activo</option>
+                    <option value="eliminado">Eliminado</option>
+                </select>
+            </div>
+
+            <div class="form-group mt-3">
+                <a href="index.html" class="btn btn-danger">
+                    <i class="fa fa-times"></i> Cancelar
+                </a>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-save"></i> Guardar
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/insertar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo base datos SQL AJAX</title>
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importacion de Bootstrap (actualizada) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Importacion del FontAwesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- Importacion del jQuery -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/TweenMax.min.js"></script>
+
+    <!-- Importacion de Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mantenimiento Ajax, <small>jquery</small></h1>
+        <hr>
+
+        <div class="text-left">
+            <a href="insertar.html" class="btn btn-primary">
+                <i class="fa fa-plus"></i> Insertar Registro
+            </a>
+            <br><br>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="w50">ID</th>
+                        <th>Nombre</th>
+                        <th class="w50">Actualizar</th>
+                        <th class="w50">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="tblRegistros">
+                    <!-- Los registros se cargarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Añadir mensaje para mostrar cuando no hay datos -->
+        <div id="sinDatos" style="display:none" class="alert alert-info text-center">
+            No hay registros para mostrar
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/select.js"></script>
+</body>
+
+</html>
